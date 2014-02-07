@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Store App</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-css/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+</head>
+
+<body ng-app="iti-store" ng-controller="MainCtrl">
+    <div ng-include="'app/common/nav.html'"></div>
+
+    <body class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="well">
+                    Sidebar
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div ng-view>
+                    <div class="well">Main Area</div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="app/app.config.js"></script>
+    <script src="app/app.services.js"></script>
+    <script src="app/app.controllers.js"></script>
+</body>
+
+</html>

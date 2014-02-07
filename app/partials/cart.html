@@ -1,0 +1,19 @@
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in items">
+            <td>{{item.name}}</td>
+            <td>{{item.cost}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+<h3>{{itemTotal}}</h3>
+
+<a href="#/checkout" class="btn btn-success">Checkout</a>
